@@ -5,7 +5,7 @@ class info_protect :
     def __init__(self,pathname,mode):
         self.pathname=pathname
         self.mode=mode
-        self.base_str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+        self.base_str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ "
         self.base_str*=2
         self.instr=open(self.pathname,'r').read()
         self.outstr=''
