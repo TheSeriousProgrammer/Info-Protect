@@ -4,7 +4,7 @@ Projects aims at encrypting all types of files..with advanced ceaser cipher (sor
 
 The programs don't work without py3
 
-Text_file_encrypter.py instructions:
+>>>>Text_file_encrypter.py instructions:
 
   1/.The menu is well self explanatory
 
@@ -22,7 +22,7 @@ Text_file_encrypter.py instructions:
 
   8/. The encrypted file is created in the same location of the parent file
 
-Image_file_encrypter.py instructions:
+>>>>Image_file_encrypter.py instructions:
 
   0/. Png files are recomended to ensure quality.. however the output files are always in png
   
