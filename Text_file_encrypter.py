@@ -26,7 +26,7 @@ class info_protect :
              else:
                  new_chr=self.instr[i]
              self.outstr+=new_chr   
-        open(self.pathname,'w').write(self.outstr)
+        open(self.pathname[:len(self.pathname)-4]+'_output.txt','w').write(self.outstr)
 
     def decrypt(self):        
         for i in self.key:
@@ -39,7 +39,7 @@ class info_protect :
          else:
             new_chr=self.instr[i]
          self.outstr+=new_chr   
-        open(self.pathname,'w').write(self.outstr)
+        open(self.pathname[:len(self.pathname)-4]+'_output.txt','w').write(self.outstr)
 
     def process(self):
         if self.mode=="Enc":
