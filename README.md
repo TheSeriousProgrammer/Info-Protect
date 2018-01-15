@@ -43,6 +43,7 @@ The programs don't work without py3
   8/.The encrypted file is created in the same location of the parent file
 
 >>>>PDF_file_encrypter.py
+
   0/.The instructions are as same as image encrypter(except for the image specific points)
   
 Gui versions are under developement.....
