@@ -10,20 +10,20 @@ class info_protect :
         for i in range(len(self.password)):
             x=self.base_str.find(self.password[i])
             self.key.append(x)            
-        
-        self.in_pixels=bytearray(open(self.path,'rb').read())*2
+        self.base_list=bytearray(range(256))*2
+        self.in_pixels=bytearray(open(self.path,'rb').read())
         self.out_pixels=bytearray()
         self.venue=''
         self.date,self.time='',''
 
     def encrypt(self):
         for i in range(len(self.in_pixels)):
-            self.out_pixels.append((self.in_pixels[i]+self.key[i%len(self.key)])%256)
+            self.out_pixels.append(self.base_list[self.in_pixels[i]+self.key[i%len(self.key)]])
         open(self.path[:len(self.path)-4]+'_output.png','wb').write(self.out_pixels)
         
     def decrypt(self):
         for i in range(len(self.in_pixels)):
-            self.out_pixels.append((self.in_pixels[i]-self.key[i%len(self.key)])%256)
+            self.out_pixels.append(self.base_list[self.in_pixels[i]-self.key[i%len(self.key)]])
         open(self.path[:len(self.path)-4]+'_output.png','wb').write(self.out_pixels)
 
     def process(self):
@@ -43,11 +43,11 @@ class info_protect :
             self.time=self.time[0]+':'+self.time[1]+' AM'
 try:
     global file
-    file1=open("Img_log.dat",'rb')
+    file1=open("imglog.dat",'rb')
     file1.close()
-    file1=open("Img_log.dat",'ab')
+    file1=open("imglog.dat",'ab')
 except IOError:
-    file1=open("Img_log.dat",'ab')
+    file1=open("imglog.dat",'ab')
 
 
 while True :
@@ -79,7 +79,7 @@ while True :
     elif choice==3 :
         try:
            file1.close()
-           file1=open("Img_log.dat",'rb')
+           file1=open("imglog.dat",'rb')
            a=1
            while True :
                    t=pickle.load(file1)
@@ -102,4 +102,6 @@ while True :
         break
             
             
+        
+
         
