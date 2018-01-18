@@ -43,11 +43,11 @@ class info_protect :
             self.time=self.time[0]+':'+self.time[1]+' AM'
 try:
     global file
-    file1=open("log.dat",'rb')
+    file1=open("pdflog.dat",'rb')
     file1.close()
-    file1=open("log.dat",'ab')
+    file1=open("pdflog.dat",'ab')
 except IOError:
-    file1=open("log.dat",'ab')
+    file1=open("pdflog.dat",'ab')
 
 
 while True :
@@ -79,7 +79,7 @@ while True :
     elif choice==3 :
         try:
            file1.close()
-           file1=open("log.dat",'rb')
+           file1=open("pdflog.dat",'rb')
            a=1
            while True :
                    t=pickle.load(file1)
