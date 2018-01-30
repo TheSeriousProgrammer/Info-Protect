@@ -45,6 +45,20 @@ The programs don't work without py3
 >>>>PDF_file_encrypter.py
 
   0/.The instructions are as same as image encrypter(except for the image specific points)
+
+>>>>Universal_file_encrypter_v01
+
+  0/.Takes words , sentences with special charecters as password
+  
+  1/.Can encrypt any file
+  
+  2/.If the input file has the name <filename>.<extension> then the output file will have the namse as <filename>.secure
+  
+  3/.The respective <filename>.secure must be passed in the decryption menu to obtain the desired decrypted file
+  
+  4/. Extremely Secure as the encryption happens in the binary level
   
 Gui versions are under developement.....
+
+
 
