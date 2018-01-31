@@ -77,7 +77,7 @@ The programs don't work without py3
   
   
   
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Gui versions are under developement.....
+>>>>>Gui versions are under developement.....
 
 
 
