@@ -46,7 +46,7 @@ The programs don't work without py3
 
   0/.The instructions are as same as image encrypter(except for the image specific points)
 
->>>>Universal_file_encrypter_v01
+>>>>Universal_file_encrypter.py
 
   0/.Takes words , sentences with special charecters as password
   
@@ -57,6 +57,25 @@ The programs don't work without py3
   3/.The respective <filename>.secure must be passed in the decryption menu to obtain the desired decrypted file
   
   4/. Extremely Secure as the encryption happens in the binary level
+
+>>>>Universal_file_encrypter_2.0.py
+  0/.Takes any file with size lesser than the the file to encrypted as password
+  
+  1/.Can encrypt any file
+  
+  2/.If the input file has the name <filename>.<extension> then the output file will have the namse as <filename>.secure
+  
+  3/.The respective <filename>.secure must be passed in the decryption menu to obtain the desired decrypted file
+  
+  4/. Extremely Secure as the encryption happens in the binary level
+  
+  5/.Skyrocketed data protection to extremely big password obtained form password files...
+  
+  6/.The bigger the files which have to encrypted or decrypted the greater the amount of execution will be
+  
+  7/.This program cannot encrypt files larger than 70% the size of your ram
+  
+  
   
 Gui versions are under developement.....
 
