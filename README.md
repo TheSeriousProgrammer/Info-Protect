@@ -1,6 +1,6 @@
 # Info-Protect
 
-NVM : I was a kid back then thuinking it to be the best Symetric Encryption algo .. I just re-invented an outdated Cipher algo (lol)
+Edit : I was a kid back then thuinking it to be the best Symetric Encryption algo .. I just re-invented an outdated Cipher algo (lol)
 
 Projects aims at encrypting all types of files..with advanced ceaser cipher (sorry if the spellings are wrong)
 
